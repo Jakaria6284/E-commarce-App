@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="1dp"
+    android:background="#00FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/grid_product_layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Title"
+
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/grid_product_layout_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/grid_product_layout_button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/grid_product_layout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/black_border"
+        android:backgroundTint="@color/md_green_500"
+        android:text="VIEW ALL"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/grid_product_layout_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginBottom="4dp"
+
+
+       android:columnCount="2"
+
+        android:background="#02FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid_product_layout_button"
+        app:layout_constraintVertical_bias="0.227" >
+        <include layout="@layout/horizenta_scroll_item_layout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"/>
+
+        <include layout="@layout/horizenta_scroll_item_layout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"/>
+        <include layout="@layout/horizenta_scroll_item_layout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"/>
+        <include layout="@layout/horizenta_scroll_item_layout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"/>
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

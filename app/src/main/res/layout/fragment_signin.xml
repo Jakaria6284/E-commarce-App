@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".fragment.signinFragment">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="400dp"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toTopOf="@+id/signupemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/register" />
+
+
+
+
+    <EditText
+        android:id="@+id/signupemail"
+        android:layout_width="350dp"
+       android:padding="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="236dp"
+        android:background="@drawable/border_background"
+        android:drawableLeft="@drawable/email"
+        android:drawableTint="@color/black"
+        android:drawablePadding="10dp"
+        android:hint="Enter Name"
+
+        android:textColorHint="@color/black"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signupconpassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/border_background"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/black"
+        android:hint="Enter password"
+        android:padding="16dp"
+
+        android:textColorHint="@color/black"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/md_green_800"
+        android:backgroundTint="@color/md_green_800"
+        android:text="Sigin"
+
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/signupconpassword"
+        app:layout_constraintStart_toStartOf="@+id/signupconpassword"
+        app:layout_constraintTop_toBottomOf="@+id/signupconpassword" />
+
+    <ProgressBar
+        android:id="@+id/signinloading"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/black"
+        android:progressBackgroundTint="@color/black"
+        android:progressTint="@color/black"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/signupconpassword"
+        app:layout_constraintStart_toStartOf="@+id/signupconpassword"
+        app:layout_constraintTop_toBottomOf="@+id/signupconpassword" />
+
+
+    <View
+        android:id="@+id/divider11"
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupbtn" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/divider12"
+        app:layout_constraintEnd_toStartOf="@+id/divider12"
+        app:layout_constraintStart_toEndOf="@+id/divider11"
+        app:layout_constraintTop_toTopOf="@+id/divider11" />
+
+    <View
+        android:id="@+id/divider12"
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/divider11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider11"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/dont_have_an_account"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Don't have an account"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@drawable/border_background"
+        app:layout_constraintEnd_toEndOf="@+id/signupconpassword"
+        app:layout_constraintStart_toStartOf="@+id/signupconpassword"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <Button
+        android:id="@+id/forgot"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border_background"
+        android:text="Forgot password??"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/signupbtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/signupbtn"
+        app:layout_constraintTop_toBottomOf="@+id/signupbtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

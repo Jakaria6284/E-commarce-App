@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp"
+    android:id="@+id/horizental_item"
+    android:elevation="5dp"
+    android:background="@drawable/slider_background"
+    android:layout_margin="2dp"
+    android:layout_width="125dp"
+    android:layout_height="165dp">
+
+    <ImageView
+        android:id="@+id/hhs_image"
+        android:layout_width="115dp"
+        android:layout_height="100dp"
+
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <TextView
+        android:id="@+id/hhs_product_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="@+id/hhs_image"
+        app:layout_constraintStart_toStartOf="@+id/hhs_image"
+        app:layout_constraintTop_toBottomOf="@+id/hhs_image"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <TextView
+        android:id="@+id/hhs_product_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SD 435 Processor"
+        android:textColor="@color/md_green_900"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/hhs_product_title"
+        app:layout_constraintStart_toStartOf="@+id/hhs_product_title"
+        app:layout_constraintTop_toBottomOf="@+id/hhs_product_title" />
+
+    <TextView
+        android:id="@+id/hhs_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="@+id/hhs_product_description"
+        app:layout_constraintStart_toStartOf="@+id/hhs_product_description"
+        app:layout_constraintTop_toBottomOf="@+id/hhs_product_description" />
+
+
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>

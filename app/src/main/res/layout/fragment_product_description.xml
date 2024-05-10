@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProductDescriptionFragment">
+
+
+    <TextView
+        android:id="@+id/tv_productDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="The Samsung Galaxy M11 features a 6.4-inch Infinity-O display, 1.8Ghz octa-core processor, 3GB of RAM and 32GB of internal storage, and 5000mAh battery. There is also a small punch hole in the top-left corner for the 8-megapixel selfie camera at the front of the phone. On the back is situated a triple-camera setup with a 13MP main sensor, a 5MP ultra-wide-angle shooter and a dedicated 2MP depth sensor. The Samsung Galaxy M11 price is €159 and comes with Android 10 out of the box."
+        android:textColor="@color/black"
+        />
+
+</FrameLayout>

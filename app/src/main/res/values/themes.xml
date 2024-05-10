@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyMall" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#023519</item>
+        <item name="colorPrimaryVariant">@color/md_light_green_900</item>
+        <item name="colorOnPrimary">@color/md_green_900</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/md_green_900</item>
+        <item name="colorSecondaryVariant">@color/md_green_900</item>
+        <item name="colorOnSecondary">#154D17</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">#042C0D</item>
+
+
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColorHint">#FF0000</item> <!-- Change hint color here -->
+    </style>
+
+
+    <style name="Theme.MyMall.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MyMall.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MyMall.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

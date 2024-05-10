@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".paymentActivity">
+
+    <TextView
+        android:id="@+id/congrateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulation"
+
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/congrateImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/yes"
+
+        app:layout_constraintEnd_toEndOf="@+id/congrateText"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/congrateText"
+        app:layout_constraintTop_toBottomOf="@+id/congrateText" />
+
+    <TextView
+        android:id="@+id/orderid"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="OrderID"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="@+id/congrateImage"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/congrateImage"
+        app:layout_constraintTop_toBottomOf="@+id/congrateImage" />
+
+    <TextView
+        android:id="@+id/deliverdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Expected Date 4 to 6 days"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/congrateImage"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="@+id/congrateImage"
+        app:layout_constraintTop_toBottomOf="@+id/smsandemail" />
+
+    <TextView
+        android:id="@+id/smsandemail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="You will shortly receive you order\nconfarmation sms and email"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/congrateImage"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="@+id/congrateImage"
+        app:layout_constraintTop_toBottomOf="@+id/orderid" />
+
+    <Button
+        android:id="@+id/continouetoshoping"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="88dp"
+        android:background="@color/md_green_900"
+        android:gravity="center"
+        android:text="Continue to Shopping"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/congrateImage"
+        app:layout_constraintHorizontal_bias="0.353"
+        app:layout_constraintStart_toStartOf="@+id/congrateImage"
+        app:layout_constraintTop_toBottomOf="@+id/deliverdate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

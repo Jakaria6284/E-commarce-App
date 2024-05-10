@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/border_background"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="4dp"
+    android:padding="8dp"
+    android:elevation="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ecommarce" />
+
+    <TextView
+        android:id="@+id/productTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="SamsungM11"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/productImage"
+        app:layout_constraintTop_toTopOf="@+id/productImage" />
+
+    <TextView
+
+        android:id="@+id/tv_free_coupens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text=""
+
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/productTitle"
+        app:layout_constraintTop_toBottomOf="@+id/productTitle" />
+
+    <ImageView
+        android:id="@+id/free_coupens_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_free_coupens"
+        app:layout_constraintEnd_toStartOf="@+id/tv_free_coupens"
+        app:layout_constraintTop_toTopOf="@+id/tv_free_coupens"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/ic_baseline_beenhere_24" />
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="32dp"
+        android:text="Tk.5999/-"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cutted_priced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TK.6999"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/product_quantity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toEndOf="@+id/productTitle"
+        app:layout_constraintTop_toTopOf="@+id/productTitle"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="50dp"
+        android:layout_height="2dp"
+
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/cutted_priced"
+        app:layout_constraintEnd_toEndOf="@+id/cutted_priced"
+        app:layout_constraintStart_toStartOf="@+id/cutted_priced"
+        app:layout_constraintTop_toTopOf="@+id/cutted_priced" />
+
+    <TextView
+        android:id="@+id/offers_applies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Offer Applied"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginEnd="8dp"
+
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/product_price"
+        app:layout_constraintStart_toStartOf="@+id/product_price"
+        app:layout_constraintTop_toTopOf="@+id/product_price" />
+
+    <TextView
+        android:id="@+id/coupens_applied"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="@+id/product_price"
+        app:layout_constraintStart_toStartOf="@+id/divider4"
+        app:layout_constraintTop_toBottomOf="@+id/offers_applies"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/product_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/border_background"
+        android:backgroundTint="@color/black"
+        android:padding="6dp"
+        android:text="Qty:1"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@+id/coupens_applied"
+        app:layout_constraintEnd_toStartOf="@+id/coupens_applied"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+        android:drawablePadding="4dp"
+        app:layout_constraintStart_toEndOf="@+id/productImage"
+        app:layout_constraintTop_toBottomOf="@+id/tv_free_coupens"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:background="@color/md_green_700"
+        android:gravity="center"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productImage"
+        app:layout_constraintVertical_bias="0.042">
+
+        <TextView
+            android:id="@+id/cartcoupenbodytext"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:text="Chek price after cupon redumption"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/coupen_redempbtncart"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#E3CD0B"
+            android:textColor="@color/white"
+            android:text="REDEEM"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/remove_item_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.016">
+
+
+        <ImageView
+
+            android:id="@+id/imageViewDeletebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/ic_baseline_delete_24" />
+        <TextView
+            android:id="@+id/textviewdetetebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove Item"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+
+            android:textSize="18sp"
+            android:layout_marginRight="50dp"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
